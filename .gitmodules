@@ -21,9 +21,7 @@
 	url = https://github.com/torch/cunn.git
 [submodule "extra/cutorch"]
 	path = extra/cutorch
-	url = https://github.com/soumith/cudnn.torch.git
-	branch = R7
-	R7 = https://github.com/soumith/cudnn.torch.git
+	url = https://github.com/torch/cutorch.git
 [submodule "pkg/torch"]
 	path = pkg/torch
 	url = https://github.com/torch/torch7.git

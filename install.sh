@@ -109,7 +109,7 @@ eval "$setup_lua_env_cmd"
 
 echo "Installing common Lua packages"
 cd ${THIS_DIR}/extra/luafilesystem && $PREFIX/bin/luarocks make luafilesystem-scm-1.rockspec || exit 1
-cd ${THIS_DIR}/extra/penlight && $PREFIX/bin/luarocks make penlight-scm-1.rockspec || exit 1
+cd ${THIS_DIR}/extra/penlight && $PREFIX/bin/luarocks make penlight-scm-2.rockspec || exit 1
 cd ${THIS_DIR}/extra/lua-cjson && $PREFIX/bin/luarocks make lua-cjson-2.1devel-1.rockspec || exit 1
 
 echo "Installing core Torch packages"
@@ -132,7 +132,7 @@ cd ${THIS_DIR}/pkg/optim     && $PREFIX/bin/luarocks make optim-1.0.5-0.rockspec
 if [ -x "$path_to_nvcc" ]
 then
     echo "Found CUDA on your machine. Installing CUDA packages"
-    cd ${THIS_DIR}/extra/cutorch && $PREFIX/bin/luarocks make rocks/cutorch-scm-1.rockspec || exit 1
+    cd ${THIS_DIR}/extra/cutorch && $PREFIX/bin/luarocks make rocs/cutorch-scm-1.rockspec || exit 1
     cd ${THIS_DIR}/extra/cunn    && $PREFIX/bin/luarocks make rocks/cunn-scm-1.rockspec    || exit 1
 fi
 
