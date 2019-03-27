@@ -10,6 +10,7 @@ Please try a different path, one without any spaces."
     exit 1
 fi
 PREFIX=${PREFIX:-"${THIS_DIR}/install"}
+TORCH_LUA_VERSION=LUAJIT20
 TORCH_LUA_VERSION=${TORCH_LUA_VERSION:-"LUAJIT21"} # by default install LUAJIT21
 
 while getopts 'bsh' x; do
